@@ -58,12 +58,11 @@ html {
 }
 .categories__item:hover .categories__item-description {
     position: absolute;
-    bottom: 35%;
     color: var(--text-white);
     left: 0;
     right: 0;
     text-align: center;
-    transform: translate(calc(), 25%);
+    bottom: calc(50% - 2em);
 }
 
 .categories__item:hover .img-responsive {
@@ -72,7 +71,7 @@ html {
 }
 
 .categories:has(:hover) .img-responsive:not(:hover) {
-    filter: blur(5px);
+    filter: blur(15px);
 }
 
 
